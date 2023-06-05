@@ -32,10 +32,8 @@ namespace Task5
             Console.WriteLine("Введите числа массива, разделяя их пробелом:");
             int[] numbers = Console.ReadLine()
             .Split(' ')
-            .Select(int.Parse) //проверка на целые числа?
-            .ToArray();
-
-            
+            .Select(int.Parse) 
+            .ToArray();        
   
             int difference = GetDifference(numbers);
            
